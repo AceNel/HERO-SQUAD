@@ -27,9 +27,11 @@ public class Squad {
 
     public static Squad findBySquadId(int id)
     {
+
         return instances.get(id-1);
     }
     public String getSquadName() {
+
         return squadName;
     }
     public int getSize() {
@@ -49,9 +51,11 @@ public class Squad {
         return squadMembers;
     }
     public void setSquadMembers(Hero newMember) {
+
         squadMembers.add(newMember);
     }
     public static void clearAllSquads(){
+
         instances.clear();
     }
     public void clearAllSquadMembers(){

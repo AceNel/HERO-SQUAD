@@ -1,7 +1,4 @@
 package models;
-
-import javax.swing.text.html.HTMLWriter;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Hero {
@@ -23,40 +20,47 @@ public class Hero {
     }
 
     public String getName() {return this.name;}
-    //    public String getCv() {
-//        String cv = this.name && this.power;
-//    }
+
     public int getAge() {
         return this.age;}
 
     public String getPower() {
+
         return this.power;
     }
     public String getWeakness() {
+
         return this.weakness;
     }
 
     public static ArrayList<Hero> getAllInstances() {
+
         return instances;
     }
 
     public static void clearAllHeroes(){
+
         instances.clear();
     }
     public int getId(){
+
         return id;
     }
     public static Hero findById(int id) {
+
         return instances.get(id-1);
     }
 
     public static Hero setUpNewHero(){
+
         return new Hero("Raiden",23,"telekenisis","fire");
     }
     public static Hero setUpNewHero1(){
+
         return new Hero("Sub-zer0",30,"Ice Storm","Light");
     }
     public static Hero setUpNewHero2(){
+
         return new Hero("Thanos",30,"Night Vision","Light");
     }
 
