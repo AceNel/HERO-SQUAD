@@ -1,22 +1,17 @@
 {{#partial "content"}}
-    <section class="landing-pg">
-
-                <h2>Choose Your Squad </h2>
+    <section >
+        <h2>Choose Your Squad </h2>
                 {{#each heroes}}
 
-
-                            <p>Name: {{name}}</p>
-                            <p>Super power: {{ power }}</p>
-                            <a class="btns" href="/squad/new/{{id}}">Add To Squad</a>
-
-
+                                <p>Name: {{name}}</p>
+                                <p>Super power: {{ power }}</p>
+                                <a class="btns" href="/squad/new/{{id}}">Add To Squad</a>
                 {{/each}}
-
         <h2>
             <a class="btns" href="/squad-form">Create Your Squad</a>
             <br><br>
             {{#if squads}}
-                AVAILABLE SQUADS
+                ACTIVE SQUADS
             </h2>
                 {{#each squads}}
                     <div class="squad-cont">
@@ -38,7 +33,6 @@
                                 </div>
                             {{/each}}
 
-
                         </div>
                     </div>
                 {{/each}}
@@ -50,7 +44,6 @@
     </section>
 {{/partial}}
 {{#partial "footer"}}
-    <script type="text/javascript" src="/js/jquery-3.4.0.min.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+
 {{/partial}}
 {{> layout.hbs}}
